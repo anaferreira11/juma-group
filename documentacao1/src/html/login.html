@@ -4,17 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Auralux Cosméticos</title>
-    <link rel="stylesheet" href="..\css\loginaura.css">
+    <link rel="stylesheet" href="../css/loginaura.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background-color: #ffffff;
+            padding: 2rem 3rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+        .login-container h1 {
+            margin-bottom: 1.5rem;
+            color: #9b8d93;
+            font-weight: 300;
+        }
+        .login-container img {
+            width: 150px;
+            margin-bottom: 1rem;
+        }
+        .login-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .login-container input {
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #9b8d93;
+            border-radius: 50px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        .login-container input:focus {
+            border-color: #9b8d93;
+            box-shadow: 0 0 5px rgba(155, 141, 147, 0.5);
+            outline: none;
+        }
+        .login-container button {
+            padding: 0.75rem;
+            background-color: #9b8d93;
+            color: #ffffff;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .login-container button:hover {
+            background-color: #8a787d;
+        }
+        .login-container p {
+            margin-top: 1rem;
+            color: #9b8d93;
+        }
+        .login-container p a {
+            color: #9b8d93;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .login-container p a:hover {
+            color: #8a787d;
+        }
+    </style>
 </head>
 <body>
-   
     <div class="login-container">
-        
-        
+        <!-- Logotipo fictício da Auralux -->
+        <img src="path_to_logo.png" alt="Auralux Cosméticos">
         <h1>Bem-vindo à Auralux</h1>
         <form action="/login" method="post">
             <input type="text" name="username" placeholder="Nome de Usuário" required>
             <input type="password" name="password" placeholder="Senha" required>
+            <input type="password" name="confirm_password" placeholder="Confirmar Senha" required>
             <button type="submit">Entrar</button>
         </form>
         <p>Não tem uma conta? <a href="/register">Cadastre-se</a></p>
