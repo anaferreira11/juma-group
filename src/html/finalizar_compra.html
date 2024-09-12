@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    
+           <head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+            <title> Finalizando</title>
+            <link rel="stylesheet" href="..\css\finalizar_compra.css">
+
+    </head>
+    <body style="background-color: rgb(151, 158, 158);">
+         <div class="login-container">
+
+            <h1>Finalizando sua compra</h1>
+
+           <form action="/login" method="post">
+
+           <input type="text" name="CEP" placeholder=" cep" required> 
+           <input type="text" name="RUA" placeholder=" rua" required>
+           <input type="text" name="SETOR" placeholder="setor" required>
+           <input type="text" name="NUMERO" placeholder="numero" required>
+
+          <input type="text" name="FORMASDEPAGAMENTO" placeholder="formas de pagamento " required>   
+           <a href="#">PIX</a>
+           <br />
+           <a href="#">BOLETO</a>
+           <br />
+           <a href="#">CARTAO</a>
+           <br>
+
+        
+        <input type="submit" value="Finalizar compra"  />
+               
+        </form>
+        </div>
+  </body>
+</html>
