@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('..\imagens\Protótipo(2)');
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.login-container img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.login-container img.imagem-estilo {
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+    color: #9b8d93;
+}
+
+.login-container input {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #888284;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#bt2 {
+    width: 70%;
+    padding: 11px;
+    background-color: #888284;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #6d696a;
+}
+
+.login-container a {
+    color: #9c9c9c;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
