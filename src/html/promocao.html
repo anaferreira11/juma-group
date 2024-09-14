@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Promo</title>
-    <link rel="stylesheet" href="..\css\promocao.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoção de Cosméticos</title>
+    <link rel="stylesheet" href="../css/promocao.css">
 </head>
-<body style="background-color: rgb(100, 99, 100);">
-    <div class="login-container">
-        <!-- Adicionando a imagem com a classe imagem-estilo -->
-        <img src="https://images.tcdn.com.br/img/img_prod/705138/the_rhode_kit_rhode_2857_1_9c184646a61562b4bfdba7f4e2122038.jpg" alt="promocao" class="imagem-estilo">
-
-        <h1>kit milk, hidratante e reconstrutor facial.</h1>
-
-        <form action="/" method="post">
-            <h2>$56,00</h2>
-            <h3>unidade:</h3>
-            <button type="submit">+1</button>
-            <br>
-            <br>
-            <button type="submit">-1</button>
-            <br>
-            <input type="submit" value="ADICIONAR AO CARRINHO" />
-            <button type="submit">Comprar</button>
-        </form>
+<body>
+    <div class="promo-container">
+        <div class="promo-content">
+            <img src="https://www.rhodeskin.com/cdn/shop/files/recycling-desktop_0ddd9ff4-161c-44b9-8063-6fa79204997c_2000x.jpg?v=1710965218" alt="Kit Milk, Hidratante e Reconstrutor Facial" class="promo-image">
+            <div class="promo-details">
+                <h1>Kit Milk, Hidratante e Reconstrutor Facial</h1>
+                <p>O kit de reconstrução Rhode promete uma melhor performance de tratamento de recuperação da sua pele em pouco tempo</p>
+                <div class="promo-rating">
+                    <span>★★★★★</span>
+                </div>
+                <div class="promo-price">
+                    <span>R$56,00</span>
+                </div>
+                <div class="promo-quantity">
+                    <label for="quantidade">Quantidade:</label>
+                    <button class="quantity-btn">-</button>
+                    <input type="text" id="quantidade" value="2" readonly>
+                    <button class="quantity-btn">+</button>
+                </div>
+                <button class="add-to-cart">Adicionar à Sacola</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>

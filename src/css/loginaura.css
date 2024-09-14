@@ -1,57 +1,92 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #afadad;
+    font-family: 'Georgia', serif;
+    background-image: url('https://www.rhodeskin.com/cdn/shop/files/Hero-1_Desktop_2000x.jpg?v=1711039038'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
-    color: #333;
-    
+    padding: 0;
 }
+
 .login-container {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 350px;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     text-align: center;
-}
-.login-container img {
-    width: 100px;
-    margin-bottom: 20px;
-}
-.login-container h1 {
-    margin-bottom: 20px;
-    color: #9b8d93;
-}
-.login-container input {
-    width: calc(100% - 20px);
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 16px;
-}
-.login-container button {
     width: 100%;
-    padding: 12px;
-    background-color: #888284;
+    max-width: 400px;
+}
+
+.login-container h1 {
+    margin-bottom: 1.5rem;
+    color: #141213;
+    font-weight: 300;
+}
+
+.login-container img {
+    width: 150px;
+    margin-bottom: 1rem;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container input {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #131011;
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.login-container input:focus {
+    border-color: #221d1f;
+    box-shadow: 0 0 5px rgba(167, 110, 135, 0.5);
+    outline: none;
+}
+
+.login-container button {
+    padding: 0.75rem;
+    background-color: #1a1718;
+    color: #ffffff;
     border: none;
-    border-radius: 6px;
-    color: #fff;
-    font-size: 18px;
+    border-radius: 50px;
+    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 .login-container button:hover {
-    background-color: #6d696a;
+    background-color: #1f1c1d;
 }
-.login-container a {
-    color: #9c9c9c;
+
+.login-container p {
+    margin-top: 1rem;
+    color: #131112;
+}
+
+.login-container p a {
+    color: #161113;
     text-decoration: none;
-    font-size: 14px;
+    transition: color 0.3s ease;
 }
-.login-container a:hover {
-    text-decoration: underline;
+
+.login-container p a:hover {
+    color: #080808;
+
+}
+.fundo_link { 
+
+background-color: #ffffff;
+
+
+
+
 }

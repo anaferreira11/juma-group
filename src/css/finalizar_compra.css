@@ -1,55 +1,82 @@
 body {
+    background-image: url('https://www.rhodeskin.com/cdn/shop/files/cleanse_step_2000x.jpg?v=1710916224'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-   
 }
+
 .login-container {
-    background-color: #fff;
+    background-color: rgba(255, 245, 247, 0.9); /* Fundo rosé semitransparente */
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     width: 350px;
+    max-width: 90%;
+}
+
+h1 {
     text-align: center;
-}
-.login-container img {
-    width: 100px;
+    color: #4e4e4e; /* Cinza escuro */
+    font-size: 24px;
     margin-bottom: 20px;
 }
-.login-container h1 {
-    margin-bottom: 20px;
-    color: #9b8d93;
+
+form {
+    display: flex;
+    flex-direction: column;
 }
-.login-container input {
-    width: calc(100% - 20px);
+
+input[type="text"] {
+    margin-bottom: 15px;
     padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 6px;
     font-size: 16px;
-}
-.login-container button {
+    border: 1px solid #ccc;
+    border-radius: 5px;
     width: 100%;
+    box-sizing: border-box;
+}
+
+.payment-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.payment-links a {
+    background-color: #d29fa5; /* Rosé suave */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    flex: 1;
+    margin: 0 5px;
+}
+
+.payment-links a:hover {
+    background-color: #9c819b;
+}
+
+input[type="submit"] {
+    background-color: #4e4e4e; /* Cinza escuro */
+    color: white;
     padding: 12px;
-    background-color: #888284;
     border: none;
-    border-radius: 6px;
-    color: #fff;
-    font-size: 18px;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
     transition: background-color 0.3s ease;
 }
-.login-container button:hover {
-    background-color: #6d696a;
-}
-.login-container a {
-    color: #9c9c9c;
-    text-decoration: none;
-    font-size: 14px;
-}
-.login-container a:hover {
-    text-decoration: underline;
+
+input[type="submit"]:hover {
+    background-color: #9c819b; /* Rosé escuro */
 }
