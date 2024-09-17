@@ -1,0 +1,158 @@
+/* Estilo básico */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.cart-container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #f5f3f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.cart-status {
+    text-align: center;
+    font-size: 14px;
+    color: #7a7a7a;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #d8d8d8;
+    border-radius: 5px;
+    height: 5px;
+    margin: 10px 0;
+}
+
+.progress {
+    background-color: #8b8b8b;
+    height: 100%;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.free-shipping {
+    text-align: center;
+    font-size: 14px;
+    color: #7a7a7a;
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.item-details {
+    flex: 1;
+    margin-left: 15px;
+}
+
+.item-name {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.item-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-btn {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.quantity {
+    font-size: 14px;
+}
+
+.item-price {
+    font-size: 14px;
+    color: #333;
+}
+
+.additional-products {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.additional-product {
+    display: flex;
+    align-items: center;
+}
+
+.additional-product img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.product-details {
+    flex: 1;
+    margin-left: 15px;
+}
+
+.add-button {
+    background-color: #8b8b8b;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-section {
+    text-align: center;
+}
+
+.subtotal {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.note {
+    font-size: 12px;
+    color: #7a7a7a;
+    margin-bottom: 20px;
+}
+
+.checkout-button {
+    background-color: #4d4d4d;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-button:hover {
+    background-color: #333;
+}
