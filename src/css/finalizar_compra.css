@@ -1,5 +1,5 @@
 body {
-    background-image: url('https://www.rhodeskin.com/cdn/shop/files/cleanse_step_2000x.jpg?v=1710916224'); 
+    background-image: url('https://i.pinimg.com/564x/c3/e2/0a/c3e20a1478232232e7141e89c26e55e9.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -54,7 +54,7 @@ input[type="text"] {
     color: white;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 2px;
     font-size: 14px;
     transition: background-color 0.3s ease;
     text-align: center;
