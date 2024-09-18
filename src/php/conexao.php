@@ -1,3 +1,3 @@
 <?php
-$con = new mysqli ("localhost","root", "", "auralux");
+$con = new mysqli ("localhost","root", "", "01_bd");
 ?>

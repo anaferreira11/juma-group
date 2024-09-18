@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('https://images-cdn.ubuy.co.in/655dc5759bce2a1be86d23cf-rhode-kit-by-hailey-bieber.jpg'); 
+    background-image: url('https://i.pinimg.com/564x/51/f4/27/51f427dc0bd81cb700751553711eda82.jpg'); 
     background-color: #f0f0f0;
     display: flex;
     justify-content: center;
@@ -42,12 +42,12 @@ h1 {
 }
 .btn {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     background-color: #7b858e;
-    color: #1f1a1a;
+    color: #938a8a;
     border: none;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
