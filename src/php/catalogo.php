@@ -2,8 +2,8 @@
     Listagem de usuários
 </h1>
 <?php
-$con = new mysqli ("localhost","root", "", "auralux");
-$res = $con-> query("select * from auralux.categorias");
+$con = new mysqli ("localhost","root", "", "01_bd");
+$res = $con-> query("select * from 01_bd.categorias");
 echo"<table border =1 >";
 echo"<thead>";
 echo"<tr>";
