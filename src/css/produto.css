@@ -6,7 +6,7 @@ body {
     color: #333;
 }
 header {
-    background-color: #685e68;
+    background-color: #575656;
     color: #f6f1f6;
     padding: 20px;
     text-align: center;
@@ -21,13 +21,13 @@ nav {
     text-align: center;
 }
 nav a {
-    color: #8d7e7e;
+    color: #9d9a9a;
     text-decoration: none;
     margin: 0 15px;
     font-size: 1.1em;
 }
 nav a:hover {
-    color: #c59cb5;
+    color: #555254;
 }
 .hero h2 {
     background-color: rgba(0, 0, 0, 0.5);

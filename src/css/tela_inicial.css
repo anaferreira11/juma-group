@@ -3,6 +3,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-image: url('https://i.pinimg.com/564x/df/57/df/df57df27c5abfa982284c5e00b5ae656.jpg'); 
     background-color: #e0dedb;
     color: #333;
     overflow: hidden; /* Prevent scrolling */
