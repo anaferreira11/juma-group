@@ -3,7 +3,7 @@
 </h1>
 <?php
 include("conexao.php");
-$res = $con-> query(insert into catalogo (nome,descricao,preco) );
+$res = $con-> query("select * from auralux.categorias ");
 echo"<table border =1 >";
 echo"<thead>";
 echo"<tr>";

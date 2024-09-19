@@ -120,8 +120,11 @@ SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS; 
 
+<<<<<<< HEAD
 
 insert into categorias (nome,preco) values ("Pincel","80");
 insert into categorias (nome,preco) values ("Base","70");
 
 
+=======
+>>>>>>> 30ac71a2f98681eb833869c151ce87d108e69529
