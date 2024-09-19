@@ -2,15 +2,15 @@
     Listagem de usuários
 </h1>
 <?php
-$con = new mysqli ("localhost","root", "", "01_bd");
-$res = $con-> query("select * from 01_bd.categorias");
+include("conexao.php");
+$res = $con-> query("select * from auralux.categorias");
 echo"<table border =1 >";
 echo"<thead>";
 echo"<tr>";
-echo"<th> id </th>";
+echo"<th> id</th>";
 echo"<th> nome </th>";
-echo"<th> preco </th>";
-
+echo"<th> Preco </th>";
+echo"<th colspan='2'> Opções </th>";
 echo"</tr>";
 echo"<thead>";
 echo"<tbody>";
@@ -26,6 +26,14 @@ while($obj= $res -> fetch_object()){
     echo"<td>";
     echo $obj->preco;
     echo"</td>";
+    echo"<td>";
+    echo "<a href='excluir.php?id=$id'> Excluir </a>";
+    echo"</td>";
+    echo"<td>";
+    echo "<a href='editar.php?id=$id'> Editar </a>";
+    echo"</td>";
+
+
     echo"<td>";
     echo"<tr>";
 }
