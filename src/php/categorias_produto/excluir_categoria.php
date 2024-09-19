@@ -1,6 +1,6 @@
 <?php
 $id = $_GET["id"];
-include("conexao.php");
+$con = new mysqli ("localhost","root", "", "auralux");
 $res = $con-> query("delete  from auralux.categorias where id = $id");
 
 
@@ -9,4 +9,4 @@ echo "Excluido com sucesso!";
 ?>
 <br>
 
-<a href="catalogo.php">Voltar</a>
+<a href="categorias.php">Voltar</a>

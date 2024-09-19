@@ -4,7 +4,7 @@
 <?php
 $id =$_GET["id"];
 include("conexao.php");
-$res = $con-> query("select * from auralux.categorias where id=$id");
+$res = $con-> query("select * from auralux.produtos where id=$id");
 if($obj= $res->fetch_object()){
     $nome=$obj->nome;
     $preco=$obj->preco;
