@@ -24,8 +24,7 @@ CREATE TABLE IF NOT EXISTS `auralux`.`clientes` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(50) NOT NULL,
   `senha` VARCHAR(32) NOT NULL,
-  `login` VARCHAR(20) NOT NULL,
-  `telefone` VARCHAR(20) NOT NULL,
+  `email` VARCHAR(150) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
@@ -120,11 +119,7 @@ SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS; 
 
-<<<<<<< HEAD
 
 insert into categorias (nome,preco) values ("Pincel","80");
 insert into categorias (nome,preco) values ("Base","70");
 
-
-=======
->>>>>>> 30ac71a2f98681eb833869c151ce87d108e69529
