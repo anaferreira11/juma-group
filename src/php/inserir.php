@@ -6,9 +6,9 @@
 <?php
 include("conexao.php");
 $nome = $_POST["nome"];
-$senha = $_POST["senha"];
-$tel = $_POST["telefone"];
-$con-> query("insert into clientes (nome,senha,telefone) values ('$nome','$senha','$tel')");
+$email = $_POST["Email"];
+$senha = md5( $_POST["senha"]);
+$con-> query("insert into auralux.clientes (nome,email, senha) values ('$nome','$email','$senha')");
     
 
 
