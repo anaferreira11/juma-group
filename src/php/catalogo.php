@@ -3,7 +3,7 @@
 </h1>
 <?php
 include("conexao.php");
-$res = $con-> query("select * from auralux.categorias");
+$res = $con-> query(insert into catalogo (nome,descricao,preco) );
 echo"<table border =1 >";
 echo"<thead>";
 echo"<tr>";
@@ -24,7 +24,7 @@ while($obj= $res -> fetch_object()){
     echo $obj->nome;
     echo"</td>";
     echo"<td>";
-    echo $obj->preco;
+    echo $obj->preco ;
     echo"</td>";
     echo"<td>";
     echo "<a href='excluir.php?id=$id'> Excluir </a>";
