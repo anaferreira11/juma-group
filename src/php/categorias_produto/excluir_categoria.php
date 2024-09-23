@@ -5,8 +5,19 @@ $res = $con-> query("delete  from auralux.categorias where id = $id");
 
 
 $con -> close();
-echo "Excluido com sucesso!";
+
 ?>
 <br>
 
-<a href="categorias.php">Voltar</a>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Auralux - Categoria do Produto listagem: </title>
+    <link rel="stylesheet" href="../css/categoria.css">
+</head>
+<body>
+    <h1>categoria excluída!</h1>
+    <a href="../categorias_produto/listarcategorias.php">conferir</a>
+</body>
