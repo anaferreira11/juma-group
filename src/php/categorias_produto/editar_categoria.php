@@ -17,8 +17,8 @@ $con -> close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auralux - Inserir Produto</title>
-    <link rel="stylesheet" href="../../css/inserir_produto.css">
+    <title>Auralux - Inserir Categoria</title>
+    <link rel="stylesheet" href="../../css/categoria.css">
 
 
 
@@ -26,7 +26,7 @@ $con -> close();
 </head>
 <body>
     <div class="container">
-        <h1>Inserir Produto</h1>
+        <h1>Inserir Categoria</h1>
         <form action="alterar-produto.php" method="post">
             <div class="form-group">
             <label >
@@ -34,7 +34,7 @@ $con -> close();
             <input type="hidden" name="id" value="<?php echo $id; ?>">
         </label>
         <br>
-                <label for="name">Nome do Produto </label>
+                <label for="name">Categoria do Produto </label>
                 <input type="text" id="name" name="nome" value="<?php echo $nome; ?>" required>           
             </div>
             <div class="form-group">
