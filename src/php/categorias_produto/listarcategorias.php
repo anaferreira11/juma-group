@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
 
     <title>Auralux - Categoria do Produto listagem: </title>
-    <link rel="stylesheet" href="../css/categoria.css">
+    <link rel="stylesheet" href="../../css/categoria.css">
 
 
 
