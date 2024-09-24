@@ -1,103 +1,159 @@
 /* tela_inicial.css */
 
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('https://i.pinimg.com/564x/df/57/df/df57df27c5abfa982284c5e00b5ae656.jpg'); 
-    background-color: #e0dedb;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
     color: #333;
-    overflow: hidden; /* Prevent scrolling */
-    height: 100vh; /* Set body height to viewport height */
 }
 
-/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
 .top-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #b4b3b3;
-    height: 10vh; /* Set a fixed height for the header */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-/* Reduce icon sizes to save space */
-.menu-icon,
-.cart-icon {
-    font-size: 1.2em;
-}
-
-/* Navigation Links */
-.nav-links {
-    display: flex;
-    gap: 10px;
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .nav-links a {
-    color: #333;
     text-decoration: none;
+    color: white;
+    margin-left: 20px;
     font-weight: bold;
-    font-size: 0.9em; /* Reduce font size */
 }
 
-/* Search Bar Styles */
 .search-container {
     display: flex;
     align-items: center;
-    gap: 5px;
+}
+
+.search-container label {
+    margin-right: 10px;
+    font-size: 14px;
 }
 
 #search-bar {
     padding: 5px;
     border: none;
     border-radius: 5px;
-    width: 150px; /* Reduce width */
 }
 
-/* Hero Section Styles */
+header a[href*="carrinho"] {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+main {
+    padding-top: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .hero-section {
-    position: relative;
-    height: 50vh; /* Take up the rest of the viewport */
-    overflow: hidden;
-}
-
-.hero-image {
-    width: 90%;
-    height: 100%;
-    object-fit: cover; /* Cover the entire hero section */
-    opacity: 0.9;
-}
-
-/* Overlay Content */
-.content-overlay {
-    position: absolute;
-    top: 10%; /* Adjusted for better placement */
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: #9b8d93;
     color: white;
-}
-
-.promo-text {
     text-align: center;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px; /* Reduce padding */
-    border-radius: 5px;
+    padding: 100px 20px;
+    position: relative;
+    background-image: url('background.jpg'); /* Adicione a imagem de fundo aqui */
+    background-size: cover;
+    background-position: center;
 }
 
-.cta-button {
-    background-color: #777;
+.content-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.promo-text h2 {
+    font-size: 36px;
+    margin: 0 0 20px;
+}
+
+.submit {
+    background-color: #333;
     color: white;
-    padding: 8px 15px; /* Reduce button size */
+    padding: 10px 20px;
     border: none;
-    cursor: pointer;
-    font-size: 1em; /* Reduce font size */
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
-.cta-button:hover {
+.submit:hover {
     background-color: #555;
+}
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    transition: left 0.3s;
+    padding-top: 60px; /* Espaço para o header */
+    z-index: 999;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    padding: 15px 20px;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #444;
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .promo-text h2 {
+        font-size: 28px;
+    }
 }
