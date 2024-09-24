@@ -12,6 +12,8 @@
             <div class="menu-icon" onclick="toggleSidebar()">☰</div>
             <div class="nav-links">
                 <a href="../src/html/produtos.html">PRODUTOS</a>
+                <a href="../src/html/cadastro.html">cadastro</a>
+                <a href="../src/html/login.html">login</a>
             </div>
             <div class="search-container">
                 <label for="search-bar">PROCURAR PRODUTOS:</label>
@@ -30,14 +32,17 @@
     </aside>
     
     <main>
-        <div class="hero-section">
-            <div class="content-overlay">
-                <div class="promo-text">
-                    <h2>COMPRE AGORA COM ATÉ<br>30% OFF</h2>
-                    <button class="submit">COMPRAR AGORA<a href="..\src\html\produtos.html"></a></button>
-                </div>
-            </div>
+    <div class="hero-section">
+    <div class="content-overlay">
+        <div class="promo-text">
+            <h2>COMPRE AGORA COM ATÉ<br>30% OFF</h2>
+            <a href="../src/html/promocao.html">
+                <button type="button">COMPRE AGORA PROMO</button>
+            </a>
         </div>
+    </div>
+</div>
+
     </main>
     
     <script>
