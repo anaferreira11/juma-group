@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
     <link rel="stylesheet" href="../src/css/tela_inicial.css">
+    
 </head>
 <body>
     <header>
@@ -12,8 +13,8 @@
             <div class="menu-icon" onclick="toggleSidebar()">☰</div>
             <div class="nav-links">
                 <a href="../src/html/produtos.html">PRODUTOS</a>
-                <a href="../src/html/cadastro.html">cadastro</a>
-                <a href="../src/html/login.html">login</a>
+                <a href="../src/html/cadastro.html">CADASTRO</a>
+                <a href="../src/html/login.html">LOGIN</a>
             </div>
             <div class="search-container">
                 <label for="search-bar">PROCURAR PRODUTOS:</label>

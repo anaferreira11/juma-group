@@ -15,10 +15,16 @@ $con ->close();
     <meta charset="UTF-8">
 
     <title>Auralux - Categoria do Produto listagem: </title>
-    <link rel="stylesheet" href="../css/categoria.css">
+    <link rel="stylesheet" href="../src/css/inserir.css">
+    <link rel="stylesheet" href="../../css/inserircategoria.css">
+
 </head>
 <body>
-    <h1>categoria cadastrada!</h1>
+    <h1>Categoria Cadastrada!</h1>
+
+    <br>
     <a href="../categorias_produto/listarcategorias.php">conferir</a>
+
+
 </body>
 
