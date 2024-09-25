@@ -24,7 +24,6 @@ CREATE TABLE IF NOT EXISTS `auralux`.`clientes` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(50) NOT NULL,
   `senha` VARCHAR(32) NOT NULL,
-  `email` VARCHAR(150) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
@@ -45,8 +44,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `auralux`.`produtos` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NOT NULL,
-  `preco_compra` DECIMAL(6,2) NOT NULL,
-  `preco_venda` DECIMAL(6,2) NOT NULL,
+  `preco` DECIMAL(6,2) NOT NULL,
   `categoria` INT NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_produtos_categorias1_idx` (`categoria` ASC) ,
@@ -99,25 +97,7 @@ CREATE TABLE IF NOT EXISTS `auralux`.`itens` (
 ENGINE = InnoDB;
 
 
--- -----------------------------------------------------
--- Table `auralux`.`login`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `auralux`.`login` (
-  `nome` VARCHAR(45) NOT NULL,
-  `senha` VARCHAR(45) NOT NULL,
-  `clientes_id` INT NOT NULL,
-  INDEX `fk_login_clientes1_idx` (`clientes_id` ASC) ,
-  CONSTRAINT `fk_login_clientes1`
-    FOREIGN KEY (`clientes_id`)
-    REFERENCES `auralux`.`clientes` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
-SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS; 
-
-
-
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
