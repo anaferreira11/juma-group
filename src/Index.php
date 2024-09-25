@@ -12,9 +12,15 @@
         <div class="top-bar">
             <div class="menu-icon" onclick="toggleSidebar()">☰</div>
             <div class="nav-links">
+<<<<<<< HEAD
                 <a href="../src/html/produtos.html">PRODUTOS</a>
                 <a href="../src/html/cadastro.html">CADASTRO</a>
                 <a href="../src/html/login.html">LOGIN</a>
+=======
+                <a href="../src/html/produtos.html">Produtos</a>
+                <a href="../src/html/cadastro.html">Cadastro</a>
+                <a href="../src/html/login.html">Login</a>
+>>>>>>> 55ca2cf3eaf45a57cb3df10dfc441e7a1a25ebaa
             </div>
             <div class="search-container">
                 <label for="search-bar">PROCURAR PRODUTOS:</label>
