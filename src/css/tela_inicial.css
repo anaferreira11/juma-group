@@ -1,4 +1,3 @@
-/* tela_inicial.css */
 
 body {
     font-family: Arial, sans-serif;
@@ -114,7 +113,7 @@ main {
     background-color: #333;
     color: white;
     transition: left 0.3s;
-    padding-top: 60px; /* Espaço para o header */
+    padding-top: 60px; 
     z-index: 999;
 }
 

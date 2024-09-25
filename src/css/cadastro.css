@@ -45,11 +45,10 @@ h1 {
     padding: 20px;
     background-color: #7b858e;
     color: #938a8a;
-    border: none;
-    border-radius: 4px;
+    border: 10px;
+    border-radius: 45px;
     font-size: 20px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 .btn:hover {
     background-color: #9eaebe;

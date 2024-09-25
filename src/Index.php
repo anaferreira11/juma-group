@@ -39,7 +39,7 @@
         <div class="promo-text">
             <h2>COMPRE AGORA COM ATÉ<br>30% OFF</h2>
             <a href="../src/html/promocao.html">
-                <button type="button">COMPRE AGORA PROMO</button>
+                <button type="button">SUPER PROMO AURALUX</button>
             </a>
         </div>
     </div>

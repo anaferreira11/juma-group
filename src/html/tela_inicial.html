@@ -5,30 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
     <link rel="stylesheet" href="../css/tela_inicial.css">
+
 </head>
 <body>
     <header>
         <div class="top-bar">
-            <div class="menu-icon">☰</div>
+            <div class="menu-icon" onclick="toggleSidebar()">☰</div>
             <div class="nav-links">
-            <a href="../src/html/produtos.html"> PRODUTOS</a>
+
+            <a href="../html/produtos.html"> Produtos</a>
+            <a href="../html/cadastro.html">Cadastro</a>
+            <a href="../html/login.html">Login</a>
+        
+
             </div>
             <div class="search-container">
                 <label for="search-bar">PROCURAR PRODUTOS:</label>
                 <input type="text" id="search-bar" placeholder="Digite para pesquisar...">
             </div>
-             <a href="../src/html/carrinho.html">🛒</a>
-        </div>
-    </header>
+            <div>
+                <a href="../html/carrinho.html">🛒</a>
+            </div>
+       </header>
+
+    <aside class="sidebar" id="sidebar">
+    <nav>
+    <ul>
+
+    <li><a href="..\html\categoria.html">Inserir categorias</a></li>
+    </ul>
+    </nav>
+    </aside>
     
     <main>
         <div class="hero-section">
             <div class="content-overlay">
                 <div class="promo-text">
                     <h2>COMPRE AGORA COM ATÉ<br>30% OFF</h2>
-                    <button class="cta-button">COMPRAR AGORA</button><a href="../src/html/promocao.html"></a>
-                   
-
+                    <a href="../html/promocao.html">
+                        <button type="button">COMPRE AGORA PROMO</button>
+                    </a>
     </main>
 </body>
 </html>
