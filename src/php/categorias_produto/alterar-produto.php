@@ -16,8 +16,11 @@ $con = new mysqli ("localhost","root", "", "auralux");
 
     <title>Auralux - Categoria do Produto listagem: </title>
     <link rel="stylesheet" href="../css/categoria.css">
+    <link rel="stylesheet" href="../../css/alterarcategoria.css">
 </head>
 <body>
+    <div>
     <h1>categoria alterada!</h1>
     <a href="../categorias_produto/listarcategorias.php">conferir</a>
+    </div>
 </body>
