@@ -11,9 +11,9 @@
         <div class="top-bar">
             <div class="menu-icon" onclick="toggleSidebar()">☰</div>
             <div class="nav-links">
-                <a href="../src/html/produtos.html">PRODUTOS</a>
-                <a href="../src/html/cadastro.html">cadastro</a>
-                <a href="../src/html/login.html">login</a>
+                <a href="../src/html/produtos.html">Produtos</a>
+                <a href="../src/html/cadastro.html">Cadastro</a>
+                <a href="../src/html/login.html">Login</a>
             </div>
             <div class="search-container">
                 <label for="search-bar">PROCURAR PRODUTOS:</label>
