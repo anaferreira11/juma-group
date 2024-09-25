@@ -20,7 +20,7 @@ $con = new mysqli ("localhost","root", "", "auralux");
 </head>
 <body>
     <div>
-    <h1>categoria alterada!</h1>
-    <a href="../categorias_produto/listarcategorias.php">conferir</a>
+    <h1>Categoria Alterada!</h1>
+    <a href="../categorias_produto/listarcategorias.php">Conferir</a>
     </div>
 </body>
