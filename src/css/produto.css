@@ -5,6 +5,7 @@ body {
     background-color: #f0efef;
     color: #333;
 }
+
 header {
     background-color: #575656;
     color: #f6f1f6;
@@ -12,10 +13,12 @@ header {
     text-align: center;
     position: relative; 
 }
+
 header h1 {
     margin: 0;
     font-size: 2.5em;
 }
+
 header a {
     font-size: 24px; 
     color: #f6f1f6; 
@@ -23,88 +26,71 @@ header a {
     top: 20px; 
     right: 20px; 
 }
+
 nav {
     background-color: #534e4e;
     padding: 10px;
     text-align: center;
 }
+
 nav a {
     color: #9d9a9a;
     text-decoration: none;
     margin: 0 15px;
     font-size: 1.1em;
 }
+
 nav a:hover {
     color: #555254;
     font-size: 17px;
 }
+
 .hero h2 {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
     font-size: 3em;
 }
+
 section {
     padding: 40px 20px;
     text-align: center;
 }
+
 .products {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .product {
     background-color: #adabab;
-    padding: 20px;
+    border: 1px solid #ddd;
+    padding: 16px;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
     width: 300px;
 }
+
 .product img {
     max-width: 100%;
+    height: auto;
     border-radius: 10px;
 }
+
 .product h3 {
     margin: 20px 0;
     font-size: 1.5em;
 }
+
 .product p {
     color: #777;
 }
-.product button {
-    background-color: #ffcc99;
-    color: #333;
-    border: none;
-    padding: 20px 50px;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-}
-.product button:hover {
-    background-color: #e6b380;
-}
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-footer p {
-    margin: 0;
-}
-.product {
-    border: 1px solid #ddd;
-    padding: 16px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-.product img {
-    max-width: 100%;
-    height: auto;
-}
-.product button {
+
+.product button,
+.add-more-button {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -112,16 +98,21 @@ footer p {
     cursor: pointer;
     margin-top: 10px;
 }
+
 .product input[type="number"] {
     width: 60px;
     padding: 5px;
     margin-right: 10px;
 }
-.add-more-button {
-    background-color: #28a745;
+
+footer {
+    background-color: #333;
     color: #fff;
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-    margin-left: 10px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
 }
