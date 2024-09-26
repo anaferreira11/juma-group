@@ -2,12 +2,12 @@
   
     $con = new mysqli("localhost", "root", "", "auralux");
 
-    if ($con->connect_error) {
+    if ($con->connect_error) { //tela de erro
         die("Falha na conexão: " . $con->connect_error);
     }
 
  
-    $res = $con->query("SELECT * FROM auralux.categorias");
+    $res = $con->query("SELECT * FROM auralux.categorias");//referente ao select do banco de dados
 
     
     $categorias = [];

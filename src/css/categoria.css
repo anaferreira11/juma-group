@@ -14,7 +14,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
+    max-width: 400px; /*tamanho maximo*/
 }
 h1 {
     margin-bottom: 20px;
@@ -25,12 +25,12 @@ h1 {
     margin-bottom: 15px;
 }
 .form-group label {
-    display: block;
+    display: block;/*label*/
     margin-bottom: 5px;
     color: #666;
 }
 .form-group input {
-    width: 100%;
+    width: 100%;/*largura do texto*/
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
