@@ -2,12 +2,12 @@
   
     $con = new mysqli("localhost", "root", "", "auralux");
 
-    if ($con->connect_error) { //tela de erro
+    if ($con->connect_error) {
         die("Falha na conexão: " . $con->connect_error);
     }
 
  
-    $res = $con->query("SELECT * FROM auralux.categorias");//referente ao select do banco de dados
+    $res = $con->query("SELECT * FROM auralux.categorias");
 
     
     $categorias = [];
@@ -29,9 +29,9 @@
 <body>
 
     <div class="container">
-        <h1 class="options-header">Listagem de Categorias</h1>
+<h1 class="options-header">Listagem de Categorias</h1>
        
-        <table>
+<table>
             <thead>
                 <tr>
                     <th>Nome</th>
@@ -40,7 +40,7 @@
             </thead>
             <tbody>
                 <?php
-                    // Exibindo os resultados
+        
                     foreach ($categorias as $obj) {
                         $id = $obj->id;
                         echo "<tr>";

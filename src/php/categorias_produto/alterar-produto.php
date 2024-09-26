@@ -3,9 +3,9 @@ $id = $_POST["id"];
 $nome = $_POST["nome"];
 
 $con = new mysqli ("localhost","root", "", "auralux");
- $con-> query("update auralux.categorias set nome= '$nome' where id=$id");
+$con-> query("update auralux.categorias set nome= '$nome' where id=$id");
 
- $con->close();
+$con->close();
 
 ?>
 <br>
