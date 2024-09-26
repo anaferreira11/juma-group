@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('https://i.pinimg.com/564x/51/f4/27/51f427dc0bd81cb700751553711eda82.jpg'); 
-    background-color: #f0f0f0;
+    background-image: url('https://i.pinimg.com/564x/7c/14/40/7c1440358b66271488719d1f37ceb1cb.jpg'); 
+    background-color: #a7a2a2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@ body {
     margin: 0;
 }
 .container {
-    background: #ffffff;
+    background: #bbb7b7;
     padding: 35px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
