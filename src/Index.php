@@ -28,7 +28,8 @@
     <aside class="sidebar" id="sidebar">
         <nav>
             <ul>
-                <li><a href="..\src\html\categoria.html">Inserir categorias</a></li>
+                <li><a href="../src/html/categoria.html">Inserir categorias</a></li>
+                <li><a href="../src/html/Inserir_produto.php">Inserir produto</a></li>
             </ul>
         </nav>
     </aside>
