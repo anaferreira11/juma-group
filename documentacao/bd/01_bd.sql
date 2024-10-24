@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS `auralux`.`produtos` (
   `preco` DECIMAL(6,2) NOT NULL,
   `categoria` INT NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `fk_produtos_categorias1_idx` (`categoria` ASC) VISIBLE,
+  INDEX `fk_produtos_categorias1_idx` (`categoria` ASC) ,
   CONSTRAINT `fk_produtos_categorias1`
     FOREIGN KEY (`categoria`)
     REFERENCES `auralux`.`categorias` (`id`)
@@ -65,7 +65,7 @@ CREATE TABLE IF NOT EXISTS `auralux`.`vendas` (
   `data_venda` DATE NOT NULL,
   `cliente` INT NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `fk_vendas_clientes1_idx` (`cliente` ASC) VISIBLE,
+  INDEX `fk_vendas_clientes1_idx` (`cliente` ASC) ,
   CONSTRAINT `fk_vendas_clientes1`
     FOREIGN KEY (`cliente`)
     REFERENCES `auralux`.`clientes` (`id`)
@@ -83,8 +83,8 @@ CREATE TABLE IF NOT EXISTS `auralux`.`itens` (
   `qtd` INT NOT NULL,
   `preco` DECIMAL(6,2) NOT NULL,
   PRIMARY KEY (`venda`, `produto`),
-  INDEX `fk_vendas_has_produtos_produtos1_idx` (`produto` ASC) VISIBLE,
-  INDEX `fk_vendas_has_produtos_vendas1_idx` (`venda` ASC) VISIBLE,
+  INDEX `fk_vendas_has_produtos_produtos1_idx` (`produto` ASC) ,
+  INDEX `fk_vendas_has_produtos_vendas1_idx` (`venda` ASC) ,
   CONSTRAINT `fk_vendas_has_produtos_vendas1`
     FOREIGN KEY (`venda`)
     REFERENCES `auralux`.`vendas` (`id`)
@@ -105,7 +105,7 @@ CREATE TABLE IF NOT EXISTS `auralux`.`login` (
   `nome` VARCHAR(45) NOT NULL,
   `senha` VARCHAR(45) NOT NULL,
   `clientes_id` INT NOT NULL,
-  INDEX `fk_login_clientes1_idx` (`clientes_id` ASC) VISIBLE,
+  INDEX `fk_login_clientes1_idx` (`clientes_id` ASC) ,
   CONSTRAINT `fk_login_clientes1`
     FOREIGN KEY (`clientes_id`)
     REFERENCES `auralux`.`clientes` (`id`)
