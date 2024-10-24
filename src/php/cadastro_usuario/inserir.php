@@ -1,25 +1,16 @@
 <?php
-include("conexao.php");
+ $nome = $_POST["nome"];
+ $preco = $_POST["email"];
+ $preco = $_POST["senha"];
 
-if (isset($_POST["submit"])) {
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
 
-    $stmt = $con->prepare("INSERT INTO auralux.clientes (nome, email, senha) VALUES (?, ?, ?)");
-    $stmt->bind_param("sss", $nome, $email, $senha);
+$con = new mysqli ("localhost","root","", "auralux");
 
-    if ($stmt->execute()) {
-        echo "Cliente cadastrado com sucesso!";
-    } else {
-        echo "Erro ao cadastrar cliente: " . $stmt->error;
-    }
+$con->query("insert into produtos(nome,email,senha) values ('$nome','$email','$senha')");
 
-    $stmt->close();
-}
+$con ->close();
+?> 
 
-$con->close();
-?>
 
 <!DOCTYPE html>
 <html lang="pt-BR">

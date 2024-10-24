@@ -9,4 +9,6 @@ $con->query("insert into produtos(nome,preco) values ('$nome','$preco')");
 $con ->close();
 ?> 
 
-<h1>ok</h1>
+<h1> Configurar Produtos<h1>
+<a href="listagem.php">
+<button type="button">OK</button>

@@ -21,7 +21,7 @@
             </div>
             <div class="form-group">
                 <label for="preco">Preço</label>
-                <input type="number" id="preco" name="preco" required>
+                <input type="text" id="preco" name="preco" required>
             </div>
 
             <div class="campo">
