@@ -30,7 +30,7 @@
 
     <div class="container">
 <h1 class="options-header">Listagem de Categorias</h1>
-       
+        
 <table>
             <thead>
                 <tr>
