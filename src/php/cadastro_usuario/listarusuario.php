@@ -1,47 +1,39 @@
-<h1>
-    Listagem de usuarios
-</h1>
-<?php
-include("conexao.php");
-$res = $con-> query("select * from auralux.clientes");
-echo"<table border =1 >";
-echo"<thead>";
-echo"<tr>";
-echo"<th> id</th>";
-echo"<th> nome </th>";
-echo"<th> senha </th>";
-echo"<th> Email </th>";
-echo"<th colspan='2'> Opções </th>";
-echo"</tr>";
-echo"<thead>";
-echo"<tbody>";
-while($obj= $res -> fetch_object()){
-    $id= $obj->id;
-    echo "<tr>";
-    echo"<td>";
-    echo $obj->id;
-    echo"</td>";
-    echo"<td>";
-    echo $obj->nome;
-    echo"</td>";
-    echo"<td>";
-    echo $obj->email;
-    echo"</td>";
-    echo"<td>";
-    echo $obj->senha; 
-    echo"</td>";
-    echo"<td>";
-    echo "<a href='excluirusuario.php?id=$id'> Excluir </a>";
-    echo"</td>";
-    echo"<td>";
-    echo "<a href='editar.php?id=$id'> Editar </a>";
-    echo"</td>";
+<head>
+<link rel="stylesheet" href="../../css/listagem.css"> 
+</head>
+<body>
 
+    <div>
+        <table class="tabela">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Opções</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
 
-    echo"<td>";
-    echo"<tr>";
-}
-echo"</tbody>";
-echo "</table>";
-$con ->close();
-?>
+                    $con = new mysqli("localhost", "root", "", "auralux");
+
+                    $dad = $con->query("SELECT * FROM clientes order by nome");
+
+                    while ($linha = $dad->fetch_object()){
+                        echo "<tr>\n";
+                        echo "<td>" . $linha->nome . "</td>\n";
+                        echo "<td>" . $linha->email . "</td>\n";
+                        echo "<td>\n";
+                        echo "<a href='editar.php?id=$linha->id'>Editar</a>";
+                        echo "<a href='excluirusuario.php?id=$linha->id'>Excluir</a>";
+                        echo "</td>\n";
+                        echo "</tr>\n";
+                    }
+
+                    $con->close();
+                ?>
+            </tbody>
+        </table>
+    </div> 
+</body>
+

@@ -1,8 +1,3 @@
-<?php      
-  
-  
-?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -20,8 +15,8 @@
                 <tr>
                     <th>Nome</th>
                     <th>Preço</th>
-
                     <th>Categoria</th>
+                    <th>Opções</th>
                 </tr>
             </thead>
             <tbody>
