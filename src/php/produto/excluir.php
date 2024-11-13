@@ -1,9 +1,8 @@
 <?php
 $id = $_GET["id"];
-$con = new mysqli ("localhost","root", "", "auralux");
-$res = $con-> query("delete  from auralux.produtos where id = $id");
-
-$con -> close();
+$con = new mysqli ("localhost","root","", "auralux");
+$con->query("delete from produtos where id = $id");
+$con->close();
 ?>
 <br>
 

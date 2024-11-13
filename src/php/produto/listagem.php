@@ -1,24 +1,3 @@
-<?php      
-  
-    $con = new mysqli("localhost", "root", "", "auralux");
-
-    if ($con->connect_error) {
-        die("Falha na conexão: " . $con->connect_error);
-    }
-
- 
-    $res = $con->query("SELECT * FROM auralux.produtos");
-
-    
-    $categorias = [];
-    while ($obj = $res->fetch_object()) {
-        $categorias[] = $obj;
-    }
-
-    
-    $con->close();
-?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -36,25 +15,38 @@
                 <tr>
                     <th>Nome</th>
                     <th>Preço</th>
-
-                    <th>Ações</th>
+                    <th>Categoria</th>
+                    <th>Opções</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
-        
-                    foreach ($categorias as $obj) {
-                        $id = $obj->id;
-                        echo "<tr>";
-                        echo "<td>" . $obj->nome . "</td>";
-                        echo "<td>" . $obj->preco . "</td>";
+                      $con = new mysqli("localhost", "root", "", "auralux");
 
-                        echo "<td>
-                                <a href='excluir.php?id=$id'>Excluir</a> |
-                                <a href='editar.php?id=$id'>Editar</a>
-                              </td>";
-                        echo "</tr>";
-                    }
+                     
+                  
+                   
+                      $res = $con->query("Select produtos.*,categorias.nome as nome_categoria from produtos inner join categorias on produtos.categoria = categorias.id");
+                  
+                      
+                      $categorias = [];
+                      while ($linha = $res->fetch_object()) {
+                        echo "<tr>";
+                         echo "<td>". $linha-> nome . "</td>";
+                         echo "<td>". $linha->preco .  "</td>";
+                         echo "<td>". $linha->nome_categoria .  "</td>";
+                         echo "<td>";
+                         echo "<a href='#'> editar </a>";
+                         echo "<a href='excluir.php?id=$linha->id'> excluir </a>";
+                         echo "</td>";
+                           
+                         echo "</tr>";
+                      }
+                  
+                      
+                      $con->close();
+                    
+                    
                 ?>
             </tbody>
         </table>
