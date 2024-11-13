@@ -6,9 +6,14 @@ $senha= $_POST["senha"];
 
 $con = new mysqli ("localhost","root","", "auralux");
  $con-> query("update auralux.clientes set nome= '$nome' , email= '$email', senha= '$senha'  where id=$id");
- echo "Alterado com sucesso!";
  $con->close();
 
 ?>
 <br>
-<a href="listarusuario.php">Voltar</a> 
+<div class="container">
+        <h1>Produto Alterado!</h1>
+            <div class="form-group">
+            <a href="listarusuario.php">Voltar</a>
+            </a>            </div>
+       </form>
+<link rel="stylesheet" href="../../css/excluir_categoria.css">
