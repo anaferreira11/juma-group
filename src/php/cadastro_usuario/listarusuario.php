@@ -24,7 +24,7 @@
                         echo "<td>" . $linha->nome . "</td>\n";
                         echo "<td>" . $linha->email . "</td>\n";
                         echo "<td>\n";
-                        echo "<a href='editar.php?id=$linha->id'>Editar</a>";
+                        echo "<a href='editarusuario.php?id=$linha->id'>Editar</a>";
                         echo "<a href='excluirusuario.php?id=$linha->id'>Excluir</a>";
                         echo "</td>\n";
                         echo "</tr>\n";

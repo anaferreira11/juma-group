@@ -2,13 +2,13 @@
 $id = $_POST["id"];
 $nome = $_POST["nome"];
 $email= $_POST["email"];
-$email= $_POST["senha"];
+$senha= $_POST["senha"];
 
-include("conexao.php");
- $con-> query("update auralux.cliente set nome= '$nome' , email= '$email', senha= '$senha' , where id=$id");
+$con = new mysqli ("localhost","root","", "auralux");
+ $con-> query("update auralux.clientes set nome= '$nome' , email= '$email', senha= '$senha'  where id=$id");
  echo "Alterado com sucesso!";
  $con->close();
 
 ?>
 <br>
-<a href="inserirusuario.php">Voltar</a>
+<a href="listarusuario.php">Voltar</a> 

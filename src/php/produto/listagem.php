@@ -26,17 +26,18 @@
                      
                   
                    
-                      $res = $con->query("Select produtos.*,categorias.nome as nome_categoria from produtos inner join categorias on produtos.categoria = categorias.id");
+                      $res = $con->query("Select produtos.*,categorias.nome as nome_categoria 
+                      from produtos inner join categorias on produtos.categoria = categorias.id");
                   
                       
-                      $categorias = [];
+                      
                       while ($linha = $res->fetch_object()) {
                         echo "<tr>";
-                         echo "<td>". $linha-> nome . "</td>";
-                         echo "<td>". $linha->preco .  "</td>";
+                         echo "<td>". $linha->nome . "</td>";
+                         echo "<td>". $linha->preco. "</td>";
                          echo "<td>". $linha->nome_categoria .  "</td>";
                          echo "<td>";
-                         echo "<a href='#'> editar </a>";
+                         echo "<a href='editar.php?id=$linha->id'> editar </a>";
                          echo "<a href='excluir.php?id=$linha->id'> excluir </a>";
                          echo "</td>";
                            

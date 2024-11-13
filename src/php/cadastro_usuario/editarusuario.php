@@ -4,7 +4,7 @@
 <?php
 $id =$_GET["id"];
 $con = new mysqli("localhost", "root", "", "auralux");
-$res = $con-> query("select * from auralux.cliente where id=$id");
+$res = $con-> query("select * from clientes where id=$id");
 if($obj= $res->fetch_object()){
     $nome=$obj->nome;
     $email=$obj->email;
@@ -19,7 +19,7 @@ $con -> close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auralux -    Editar Usuarios</title>
-    <link rel="stylesheet" href="../css/loginaura.css">
+    <link rel="stylesheet" href="../../css/cadastro.css">
 
 
 
@@ -32,19 +32,19 @@ $con -> close();
             <div class="form-group">
             <label >
            
-            <input type="hidden" name="id" value="<?php echo $id; ?>">
+            <input type="hidden" name="id" value="<?=$id?>">
         </label>
         <br>
                 <label for="name">Nome do usuario </label>
-                <input type="text" id="nome" name="nome" value="<?php echo $nome; ?>" required>           
+                <input type="text" id="nome" name="nome" value="<?=$nome?>" required>           
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email"  value="<?php echo $email; ?>"required>
+                <input type="email" id="email" name="email"  value="<?=$email?>"required>
             </div>
             <div class="form-group">
                 <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha" value="<?php echo $senha; ?>" required>
+                <input type="password" id="senha" name="senha" value="<?=$senha?>" required>
                 </div>
             
             <div class="form-group">
