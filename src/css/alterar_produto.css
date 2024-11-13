@@ -6,7 +6,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh;  
+    width: 100%;   
 }
 
 .container {
@@ -15,6 +16,11 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;  
 }
 
 h1 {
@@ -22,16 +28,15 @@ h1 {
 }
 
 a {
-    display: inline-block;
-    margin-top: 100px;
-    padding: 30px 40px;
+    margin-top: 20px;
+    padding: 10px 30px;
     background-color: #707172;
     color: #fff;
     text-decoration: none;
     border-radius: 25px;
-    transition: background-color 0.3s;
+    transition: 0.3s;
 }
 
 a:hover {
-    background-color: #707172; 
+    background-color: #505253;
 }

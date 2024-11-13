@@ -9,6 +9,7 @@
 
     <div class="container">
 <h1 class="options-header">Listagem de Produtos</h1>
+
         
 <table>
             <thead>
@@ -48,6 +49,9 @@
                       $con->close();
                     
                     
+
+
+
                 ?>
             </tbody>
         </table>

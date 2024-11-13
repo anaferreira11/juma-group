@@ -5,9 +5,25 @@ $preco= $_POST["preco"];
 
 $con = new mysqli ("localhost","root", "", "auralux");  
  $con-> query("update auralux.produtos set nome='$nome' , preco='$preco' where id=$id");
- echo "Alterado com sucesso!";
  $con->close();
 
 ?>
-<br>
-<a href="listagem.php">Voltar</a>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Produto: </title>
+    <link rel="stylesheet" href="../../css/alterar_produto.css">
+</head>
+
+
+<body>
+<div class= "container">
+    <h1>Produto Alterado!</h1>
+    </div class="form-group">
+    <a href="listagem.php">
+    </div>
+
+</div>
+</body>

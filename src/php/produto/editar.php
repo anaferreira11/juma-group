@@ -21,11 +21,8 @@ $con -> close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auralux - Editar Produto</title>
     <link rel="stylesheet" href="../../css/categoria.css">
-
-
-
-
-</head>
+   
+ 
 <body>
     <div class="container">
         <h1>Editar Produto</h1>
@@ -44,9 +41,14 @@ $con -> close();
 
             <a href="listagem.php">
             <button type="submit">OK</button>
+
+
             </div>
        </form>
     
+      
+    
+
       
 
 

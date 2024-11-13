@@ -18,20 +18,43 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: #ffeeee;
 }
 
 a {
     display: inline-block;
     margin-top: 100px;
     padding: 10px 30px;
-    background-color: #707172;
+    background-color: #dfefff;
     color: #fff;
     text-decoration: none;
     border-radius: 25px;
     transition: background-color 0.3s;
+
+
+button {
+    padding: 10px 20px;               
+    font-size: 16px;                 
+    color: #fff;                      
+    background-color: #007bff;        
+    border: none;                     
+    border-radius: 15px;               
+    cursor: pointer;                 
+    transition: background-color 0.3s; 
+}
+
+
+button:hover {
+    background-color: #0056b3;       
+}
+
+
+button:focus {
+    outline: none;                   
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); 
+}
 }
 
 a:hover {
-    background-color: #505253; 
+    background-color: #83ccf0; 
 }
