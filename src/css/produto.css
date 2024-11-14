@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #575656;
+    background-color: #797676;
     color: #f6f1f6;
     padding: 20px;
     text-align: center;
@@ -28,7 +28,7 @@ header a {
 }
 
 nav {
-    background-color: #534e4e;
+    background-color: #d8d0d0;
     padding: 10px;
     text-align: center;
 }
@@ -41,7 +41,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #555254;
+    color: #e4e4e4;
     font-size: 17px;
 }
 
@@ -86,7 +86,7 @@ section {
 }
 
 .product p {
-    color: #777;
+    color: #fcf4f4;
 }
 
 .product button,

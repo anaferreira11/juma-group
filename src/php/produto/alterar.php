@@ -3,26 +3,29 @@ $id = $_POST["id"];
 $nome = $_POST["nome"];
 $preco= $_POST["preco"];
 
-$con = new mysqli ("localhost","root", "", "auralux");  
- $con-> query("update auralux.produtos set nome='$nome' , preco='$preco' where id=$id");
- $con->close();
-
+$con = new mysqli("localhost", "root", "", "auralux");
+$con->query("UPDATE auralux.produtos SET nome='$nome', preco='$preco' WHERE id=$id");
+$con->close();
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alterar Produto: </title>
+    <title>Alterar Produto</title>
     <link rel="stylesheet" href="../../css/alterar_produto.css">
 </head>
 
-
 <body>
+<<<<<<< HEAD
 <div class= "container">
     <h1>Produto Alterado com Sucesso!</h1> 
     <a href="listagem.php">OK</a>
+=======
+    <div class="container">
+        <h1>Produto Alterado!</h1>
+        <a href="listagem.php">OK</a>
+>>>>>>> fb3608af54a71bced48f5420ffbdab221e742c06
     </div>
-    
-</div>
 </body>
+</html>

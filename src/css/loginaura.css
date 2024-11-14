@@ -1,6 +1,6 @@
 body {
     font-family: 'Georgia', serif;
-    background-image: url('https://www.rhodeskin.com/cdn/shop/files/Hero-1_Desktop_2000x.jpg?v=1711039038'); 
+    background-image: url('https://i.pinimg.com/736x/62/b3/a0/62b3a0f692347b1b2b6a7bc93f24bea8.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@ body {
 
 .login-container input:focus {
     border-color: #221d1f;
-    box-shadow: 0 0 5px rgba(167, 110, 135, 0.5);
+    box-shadow: 0 0 5px rgb(240, 252, 225);
     outline: none;
 }
 
