@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: #656866;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -18,43 +18,20 @@ body {
 }
 
 h1 {
-    color: #ffeeee;
+    color: #333;
 }
 
 a {
     display: inline-block;
     margin-top: 100px;
     padding: 10px 30px;
-    background-color: #dfefff;
+    background-color: #707172;
     color: #fff;
     text-decoration: none;
     border-radius: 25px;
     transition: background-color 0.3s;
-
-
-button {
-    padding: 10px 20px;               
-    font-size: 16px;                 
-    color: #fff;                      
-    background-color: #007bff;        
-    border: none;                     
-    border-radius: 15px;               
-    cursor: pointer;                 
-    transition: background-color 0.3s; 
-}
-
-
-button:hover {
-    background-color: #0056b3;       
-}
-
-
-button:focus {
-    outline: none;                   
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); 
-}
 }
 
 a:hover {
-    background-color: #83ccf0; 
+    background-color: #505253; 
 }
