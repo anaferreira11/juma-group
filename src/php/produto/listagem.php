@@ -36,7 +36,10 @@
                         echo "<tr>";
                          echo "<td>". $linha->nome . "</td>";
                          echo "<td>". $linha->preco. "</td>";
-                         echo "<td>". $linha->nome_categoria .  "</td>";
+                         echo "<td>";
+                         echo "<a href='../categorias_produto/editar_categoria.php?id=$linha->categoria'>";
+                         echo"$linha->nome_categoria";
+                         echo "</a>";
                          echo "<td>";
                          echo "<a href='editar.php?id=$linha->id'> editar </a>";
                          echo "<a href='excluir.php?id=$linha->id'> excluir </a>";

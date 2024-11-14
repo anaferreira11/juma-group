@@ -2,9 +2,8 @@
 $id = $_POST["id"];
 $nome = $_POST["nome"];
 $preco= $_POST["preco"];
-
 $con = new mysqli ("localhost","root", "", "auralux");  
- $con-> query("update auralux.produtos set nome='$nome' , preco='$preco' where id=$id");
+ $con-> query("update produtos set nome='$nome', preco='$preco' where id=$id");
  $con->close();
 
 ?>
