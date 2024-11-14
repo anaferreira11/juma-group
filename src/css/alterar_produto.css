@@ -1,60 +1,41 @@
-body {
+
+body, html {
+    height: 100%;  
+    margin: 0;    
+    display: flex; 
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;      
+    background-color: #f4f4f4; 
     font-family: Arial, sans-serif;
-<<<<<<< HEAD
-    background-color: #817d7d;
-=======
-    background-color: #f4f4f4;
->>>>>>> 7b9adf8eee02bc08f883eb187df1f282a1bb3786
-    margin: 0;
-    padding: 0;
-    align-items: center;
-<<<<<<< HEAD
-   
-=======
-    height: 100vh;
->>>>>>> cd9a9c49808d1aa602e0678c4b324ffb66b12be8
 }
+
 
 .container {
-<<<<<<< HEAD
-    background-color: #1a1818;
-=======
-    background-color: #656866;
->>>>>>> 7b9adf8eee02bc08f883eb187df1f282a1bb3786
-    padding: 20px;
+    background-color: white;
+    padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(233, 223, 223, 0.1);
-    text-align: center;
-<<<<<<< HEAD
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-    height: auto;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 300px;  
 }
+
 
 h1 {
-    color: #ffffff;
-=======
+    color: #171817;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-h1 {
-    color: #a39898;
->>>>>>> 7b9adf8eee02bc08f883eb187df1f282a1bb3786
-}
 
 a {
-    display: inline-block;
-    margin-top: 100px;
-    padding: 10px 30px;
-    background-color: #6c7074;
-    color: #fff;
     text-decoration: none;
-    border-radius: 25px;
-    transition: background-color 0.3s;
+    background-color: #868c92;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 a:hover {
-    background-color: #505253; 
+    background-color: #0056b3;
 }
