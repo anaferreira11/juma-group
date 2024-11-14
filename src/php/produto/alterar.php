@@ -20,7 +20,7 @@ $con = new mysqli ("localhost","root", "", "auralux");
 
 <body>
 <div class= "container">
-    <h1>Produto Alterado!</h1> 
+    <h1>Produto Alterado com Sucesso!</h1> 
     <a href="listagem.php">OK</a>
     </div>
     

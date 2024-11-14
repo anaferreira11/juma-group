@@ -1,31 +1,28 @@
 body {
     font-family: Arial, sans-serif;
-<<<<<<< HEAD
+ 
     background-color: #817d7d;
-=======
+
     background-color: #f4f4f4;
->>>>>>> 7b9adf8eee02bc08f883eb187df1f282a1bb3786
+ 
     margin: 0;
     padding: 0;
     align-items: center;
-<<<<<<< HEAD
-   
-=======
     height: 100vh;
->>>>>>> cd9a9c49808d1aa602e0678c4b324ffb66b12be8
+
 }
 
 .container {
-<<<<<<< HEAD
+
     background-color: #1a1818;
-=======
+
     background-color: #656866;
->>>>>>> 7b9adf8eee02bc08f883eb187df1f282a1bb3786
+
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(233, 223, 223, 0.1);
     text-align: center;
-<<<<<<< HEAD
+
     display: flex;
     flex-direction: column;
 
@@ -36,12 +33,11 @@ body {
 
 h1 {
     color: #ffffff;
-=======
+
 }
 
 h1 {
     color: #a39898;
->>>>>>> 7b9adf8eee02bc08f883eb187df1f282a1bb3786
 }
 
 a {

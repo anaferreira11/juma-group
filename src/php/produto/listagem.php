@@ -9,6 +9,11 @@
 
     <div class="container">
 <h1 class="options-header">Listagem de Produtos</h1>
+    <button type="submit"><a href="../../html/categoria.html">Inserir uma nova categoria</a></button>
+
+    <button type="submit"><a href="../../html/Inserir_produto.php">Inserir um novo produto</a></button>
+
+
 
         
 <table>
