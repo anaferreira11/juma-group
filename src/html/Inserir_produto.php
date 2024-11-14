@@ -51,9 +51,6 @@
                 <button type="submit">Adicionar Produto</button>
             </div>
         </form>
-       
-        <button class="add-button">OK</button>
-      
 
 
     </div>
