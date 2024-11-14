@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #494646;
+    background-color: #817d7d;
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,26 +11,27 @@ body {
 }
 
 .container {
-    background-color: #474444;
+    background-color: #1a1818;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: flex;
     flex-direction: column;
+
     justify-content: center;
     align-items: center;
     height: auto;  
 }
 
 h1 {
-    color: #333;
+    color: #ffffff;
 }
 
 a {
     margin-top: 20px;
     padding: 10px 30px;
-    background-color: #707172;
+    background-color: #6c7074;
     color: #fff;
     text-decoration: none;
     border-radius: 25px;
