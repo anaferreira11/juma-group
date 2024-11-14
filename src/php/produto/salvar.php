@@ -10,7 +10,25 @@ $con->query("insert into produtos(nome,preco,categoria) values ('$nome','$preco'
 $con ->close();
 ?>
 
-<h1> Configurar Produtos<h1>
-<a href="listagem.php">
-<button type="button">OK</button>
-<link rel="stylesheet" href="../../../html/salvarproduto.html">
+<br>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/excluir_categoria.css">
+
+</head>
+    
+<body>
+    <div class="container">
+        <h1>Configurar Produtos!</h1>
+            <div class="form-group">
+            </a>            </div>
+            <a href="listagem.php">Ok</a>
+       </form>
+
+
+    </div>
+</body>
+</html>
