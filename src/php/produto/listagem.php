@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Auralux - Produto Listagem</title>
-    <link rel="stylesheet" href="../../css/listagem.css">
+    <link rel="stylesheet" href="../../css/listagem.css"> 
 </head>  
 <body>
 
-    <div class="container">
-<h1 class="options-header">Listagem de Produtos</h1>
 
-        
-<table>
+    <div class="container">
+        <h1 class="options-header">Listagem de Produtos</h1>    
+
+
+        <table>
             <thead>
                 <tr>
                     <th>Nome</th>
@@ -22,17 +23,12 @@
             </thead>
             <tbody>
                 <?php
-                      $con = new mysqli("localhost", "root", "", "auralux");
+                    $con = new mysqli("localhost", "root", "", "auralux");
 
-                     
-                  
-                   
-                      $res = $con->query("Select produtos.*,categorias.nome as nome_categoria 
-                      from produtos inner join categorias on produtos.categoria = categorias.id");
-                  
-                      
-                      
-                      while ($linha = $res->fetch_object()) {
+                    $res = $con->query("Select produtos.*,categorias.nome as nome_categoria 
+                    from produtos inner join categorias on produtos.categoria = categorias.id");
+
+                    while ($linha = $res->fetch_object()) {
                         echo "<tr>";
                          echo "<td>". $linha->nome . "</td>";
                          echo "<td>". $linha->preco. "</td>";
@@ -50,10 +46,6 @@
                   
                       
                       $con->close();
-                    
-                    
-
-
 
                 ?>
             </tbody>

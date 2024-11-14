@@ -8,7 +8,6 @@ $res = $con-> query("select * from clientes where id=$id");
 if($obj= $res->fetch_object()){
     $nome=$obj->nome;
     $email=$obj->email;
-    $senha=$obj->senha;
 }
 $con -> close();
 ?>
@@ -42,10 +41,6 @@ $con -> close();
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email"  value="<?=$email?>"required>
             </div>
-            <div class="form-group">
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha" value="<?=$senha?>" required>
-                </div>
             
             <div class="form-group">
                 <button type="submit">Salvar Alterações</button>

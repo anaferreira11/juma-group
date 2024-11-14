@@ -1,7 +1,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('https://i.pinimg.com/564x/fa/41/a1/fa41a198552bf3be6b2956bbc107a90a.jpg'); 
+    background-image: url('https://i.pinimg.com/736x/fe/1f/41/fe1f41c744d7dd17dc1eed120198e6d8.jpg'); 
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #302d2d;
     color: white;
     padding: 10px 0;
     position: fixed;
@@ -69,7 +69,8 @@ main {
 }
 
 .hero-section {
-    background-color: #9b8d93;
+    background-color: #ebe2e6;
+    background-image: url('https://i.pinimg.com/736x/80/90/74/8090747678d02e2faf8125e895040f01.jpg'); 
     color: white;
     text-align: center;
     padding: 100px 20px;    position: relative;

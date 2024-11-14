@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('https://i.pinimg.com/564x/7c/14/40/7c1440358b66271488719d1f37ceb1cb.jpg'); 
-    background-color: #a7a2a2;
+    background-image: url('https://i.pinimg.com/736x/22/9c/6e/229c6ea0256538e7654e2489ab34d87b.jpg'); 
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@ body {
     margin: 0;
 }
 .container {
-    background: #bbb7b7;
+    background: #fcfcfc;
     padding: 35px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -27,7 +27,7 @@ h1 {
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #666;
+    color: #130f0f;
 }
 .form-group input {
     width: 100%;
@@ -37,14 +37,14 @@ h1 {
     font-size: 16px;
 }
 .form-group input:focus {
-    border-color: #7b8c9d;
+    border-color: #fdfdfd;
     outline: none;
 }
 .btn {
     width: 100%;
     padding: 20px;
-    background-color: #7b858e;
-    color: #938a8a;
+    background-color: #928c8c;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     font-size: 20px;
@@ -52,5 +52,5 @@ h1 {
     transition: background-color 0.3s;
 }
 .btn:hover {
-    background-color: #9eaebe;
+    background-color: #d5d8db;
 }
