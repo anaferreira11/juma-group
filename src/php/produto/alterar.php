@@ -2,8 +2,9 @@
 $id = $_POST["id"];
 $nome = $_POST["nome"];
 $preco= $_POST["preco"];
+$categoria=$_POST["categorias"];
 $con = new mysqli("localhost", "root", "", "auralux");
-$con->query("UPDATE auralux.produtos SET nome='$nome', preco='$preco' WHERE id=$id");
+$con->query("UPDATE auralux.produtos SET nome='$nome', preco='$preco', categoria=$categoria WHERE id=$id");
 $con->close();
 
 ?>

@@ -8,6 +8,8 @@ $res = $con-> query("Select * from produtos");
 if($obj= $res->fetch_object()){
     $nome=$obj->nome;
     $preco=$obj->preco;
+    $categoria=$obj->categoria;
+
 
 }
 $con -> close();
@@ -34,7 +36,24 @@ $con -> close();
                 <label for="name">Editar Nome do Produto </label>
                 <input type="text" id="name" name="nome" value="<?=$nome?>" required>  
                 <label for="name">Editar Preço do Produto </label>
-                <input type="text" id="preco" name="preco" value="<?=$preco?>" required>    
+                <input type="text" id="preco" name="preco" value="<?=$preco?>" required>
+                <label for="categorias">Editar Categoria do Produto </label>
+                <select name="categorias" > 
+                    <?php
+                    $con = new mysqli("localhost", "root", "", "auralux");
+
+                    $res = $con->query("select * from categorias");
+                    while ($linha = $res->fetch_object()) {
+                        $id = $linha->id;
+                        $nome = $linha->nome;
+                        if ($id == $categoria){
+                            echo "<option value = '$id' selected> $nome </option>";
+                        } else {
+                             echo "<option value = '$id'> $nome </option>";
+                        }
+                    }
+                    ?>
+                </select>    
             </div>
             <div class="form-group">
 
