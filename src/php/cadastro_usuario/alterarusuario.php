@@ -5,7 +5,7 @@ $email= $_POST["email"];
 
 
 $con = new mysqli ("localhost","root","", "auralux");
- $con-> query("update auralux.clientes set nome= '$nome' , email= '$email' ");
+ $con-> query("update auralux.clientes set nome= '$nome' , email= '$email' where id='$id' ");
  $con->close();
 
 ?>
