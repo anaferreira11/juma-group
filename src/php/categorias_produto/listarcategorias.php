@@ -30,7 +30,7 @@
 
     <div class="container">
 <h1 class="options-header">Listagem de Categorias</h1>
-        
+<button type="submit"><a href="../../html/categoria.html">Inserir uma nova categoria</a></button>
 <table>
             <thead>
                 <tr>
