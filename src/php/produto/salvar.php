@@ -4,7 +4,7 @@
  $categoria = $_POST["categoria"];
 
 $con = new mysqli ("localhost","root","", "auralux");
-
+ 
 $con->query("insert into produtos(nome,preco,categoria) values ('$nome','$preco','$categoria')");
 
 $con ->close();

@@ -7,6 +7,7 @@
 </head>  
 <body>
 
+<<<<<<< HEAD
     <div class="container">
 <h1 class="options-header">Listagem de Produtos</h1>
  
@@ -14,6 +15,12 @@
     <button type="submit"><a href="../../html/Inserir_produto.php">Inserir um novo produto</a></button>
 
 
+=======
+
+    <div class="container">
+        <h1 class="options-header">Listagem de Produtos</h1>    
+
+>>>>>>> b8f1ac3f55025172aae5eff929aa50a1515912ff
 
         <table>
             <thead>
@@ -33,17 +40,23 @@
 
                     while ($linha = $res->fetch_object()) {
                         echo "<tr>";
-                        echo "<td>". $linha->nome . "</td>";
-                        echo "<td>". $linha->preco. "</td>";
-                        echo "<td>". $linha->nome_categoria .  "</td>";
-                        echo "<td>";
-                        echo "<a href='editar.php?id=$linha->id'> editar </a>";
-                        echo "<a href='excluir.php?id=$linha->id'> excluir </a>";
-                        echo "</td>";
-                        echo "</tr>";
-                    }
+                         echo "<td>". $linha->nome . "</td>";
+                         echo "<td>". $linha->preco. "</td>";
+                         echo "<td>";
+                         echo "<a href='../categorias_produto/editar_categoria.php?id=$linha->categoria'>";
+                         echo"$linha->nome_categoria";
+                         echo "</a>";
+                         echo "<td>";
+                         echo "<a href='editar.php?id=$linha->id'> editar </a>";
+                         echo "<a href='excluir.php?id=$linha->id'> excluir </a>";
+                         echo "</td>";
+                           
+                         echo "</tr>";
+                      }
+                  
+                      
+                      $con->close();
 
-                    $con->close();
                 ?>
             </tbody>
         </table>

@@ -18,8 +18,8 @@ $con -> close();
     <div class="container">
         <h1>Categoria excluida!</h1>
             <div class="form-group">
-            <a href="listarcategorias.php">
-                <button type="button">Listar Novamente</button>
+            <a href="listarcategorias.php">Listar Novamente
+               
             </a>            </div>
        </form>
     

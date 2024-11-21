@@ -1,6 +1,4 @@
 <meta charset="UTF-8">
-
-
 <?php
 $id =$_GET["id"];
 $con = new mysqli ("localhost","root", "", "auralux");
@@ -20,9 +18,6 @@ $con -> close();
     <title>Auralux - Editar Categoria</title>
     <link rel="stylesheet" href="../../css/categoria.css">
 
-
-
-
 </head>
 <body>
     <div class="container">
@@ -41,9 +36,6 @@ $con -> close();
                 <button type="submit">OK</button>
             </div>
        </form>
-    
-      
-
 
     </div>
     

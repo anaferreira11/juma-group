@@ -17,7 +17,7 @@ $con -> close();
     
 <body>
     <div class="container">
-        <h1>Usuario excluido!</h1>
+        <h1>Usuário excluido!</h1>
             <div class="form-group">
             <a href="listarusuario.php">Voltar</a>
             </a>            </div>

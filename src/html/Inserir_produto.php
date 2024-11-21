@@ -23,7 +23,10 @@
                 <label for="preco">Preço</label>
                 <input type="text" id="preco" name="preco" required>
             </div>
-
+       <br>
+       <label for="categoria">Categoria</label>
+       <br>
+       
             <div class="campo">
                 <select name="categoria">
 
@@ -48,6 +51,7 @@
             </div>
 
             <div class="form-group">
+            <br>
                 <button type="submit">Adicionar Produto</button>
             </div>
         </form>
