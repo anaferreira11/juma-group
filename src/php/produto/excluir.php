@@ -17,8 +17,7 @@ $con->close();
     <div class="container">
         <h1>Produto excluido com Sucesso!</h1>
             <div class="form-group">
-            <a href="listagem.php">
-                <button type="button">Listar Novamente</button>
+            <a href="listagem.php">OK</a>
             </a>            </div>
        </form>
     

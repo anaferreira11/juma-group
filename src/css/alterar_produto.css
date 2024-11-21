@@ -8,7 +8,6 @@ body, html {
     text-align: center;      
     background-color: #f4f4f4; 
     font-family: Arial, sans-serif;
-<<<<<<< HEAD
  
     background-color: #817d7d;
 
@@ -19,21 +18,18 @@ body, html {
     align-items: center;
     height: 100vh;
 
-=======
->>>>>>> fb3608af54a71bced48f5420ffbdab221e742c06
 }
 
 
 .container {
-<<<<<<< HEAD
 
-    background-color: #1a1818;
+    background-color: #b4aeae;
 
     background-color: #656866;
 
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(233, 223, 223, 0.1);
+    box-shadow: 0 0 10px rgb(68, 68, 66);
     text-align: center;
 
     display: flex;
@@ -42,32 +38,17 @@ body, html {
     justify-content: center;
     align-items: center;
     height: auto;  
-=======
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    width: 300px;  
->>>>>>> fb3608af54a71bced48f5420ffbdab221e742c06
 }
 
 
 h1 {
-<<<<<<< HEAD
     color: #ffffff;
 
 }
 
 h1 {
-    color: #a39898;
+    color: #bbb4b4;
 }
-=======
-    color: #171817;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
->>>>>>> fb3608af54a71bced48f5420ffbdab221e742c06
 
 a {
     text-decoration: none;
@@ -79,5 +60,5 @@ a {
 }
 
 a:hover {
-    background-color: #0056b3;
+    background-color: #484b4d;
 }

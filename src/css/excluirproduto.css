@@ -6,16 +6,16 @@ body, html {
     justify-content: center; 
     align-items: center;     
     text-align: center;      
-    background-color: #f4f4f4; 
+    background-color: #dad2d2; 
     font-family: Arial, sans-serif;
 }
 
 
 .container {
-    background-color: white;
+    background-color: rgba(109, 108, 108, 0.852);
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 6px rgba(78, 100, 88, 0.1); 
     width: 300px;  
 }
 
@@ -28,9 +28,9 @@ h1 {
 
 
 a {
-    text-decoration: none;
-    background-color: #717375;
-    color: white;
+    text-decoration: none;  
+    background-color: #c5ccd3;
+    color: rgb(22, 20, 20);
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
@@ -39,4 +39,5 @@ a {
 
 a:hover {
     background-color: #969a9e;
+    
 }

@@ -11,7 +11,7 @@ $con = new mysqli ("localhost","root","", "auralux");
 ?>
 <br>
 <div class="container">
-        <h1>Usuario  Alterado!</h1>
+        <h1>Usuário  Alterado!</h1>
             <div class="form-group">
             <a href="listarusuario.php">Voltar</a>
             </a>            </div>
