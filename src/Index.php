@@ -15,12 +15,12 @@
 
                 <a href="../src/php/listagemdeprod.php">Produtos</a>
                 <a href="../src/html/cadastro.html">Cadastro</a>
-<<<<<<< HEAD
+
                 <a href="../src/html/login.html">Login</a>
 
-=======
+
                 <a href="../src/html/login.php">Login</a>
->>>>>>> 48705f1d35181a54781da2b1d66f0f68b71e8933
+
             </div>
             <div class="search-container">
                 <label for="search-bar">PROCURAR PRODUTOS:</label>
