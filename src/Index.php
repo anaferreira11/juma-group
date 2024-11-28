@@ -15,7 +15,7 @@
 
                 <a href="../src/html/produtos.html">Produtos</a>
                 <a href="../src/html/cadastro.html">Cadastro</a>
-                <a href="../src/html/login.html">Login</a>
+                <a href="../src/html/login.php">Login</a>
             </div>
             <div class="search-container">
                 <label for="search-bar">PROCURAR PRODUTOS:</label>

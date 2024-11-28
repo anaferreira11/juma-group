@@ -1,3 +1,15 @@
+<?php
+
+    $con = new mysqli ("localhost","root", "", "auralux");
+
+    $dad = $con->query("select * from clientes");
+
+    if($linhaa = $dad->fetch_object()){
+
+        $id = $linhaa->id;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -13,10 +25,16 @@
         </a>
         <!-- Logotipo da Auralux -->
         <h1>Bem-vindo à Auralux</h1>
-        <form action="../Index.php" method="post">
-            <input type="text" name="username" placeholder="Nome de Usuário" name="Nome">
+        <form action="../html/loginu.php" method="post">
+            <input type="hidden" name="id" value="<?=$id?>" />
+            <label for="nome">Nome</label>
+            <input type="text" name="nome">
             <br><br>
-            <input type="password" name="password" placeholder="Senha" name="Senha">
+            <label for="email">Email</label>
+            <input type="email" name="email">
+            <br><br>
+            <label for="senha">Senha</label>
+            <input type="password"  name="senha">
             <br><br>
             <button type="submit">Entrar</button>
         </form>
