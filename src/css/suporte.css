@@ -1,0 +1,99 @@
+/* styles.css */
+
+/* Resetando algumas propriedades padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo estilo básico para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container centralizado */
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px;
+    max-width: 90%;
+}
+
+/* Cabeçalho da página */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Parágrafo explicativo */
+p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Estilo para cada grupo de campo de formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilo dos labels */
+label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Estilo dos campos de entrada (input e textarea) */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4CAF50;
+}
+
+/* Estilo do botão de envio */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para o footer ou rodapé (se necessário) */
+footer {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+}

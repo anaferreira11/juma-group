@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte ao Cliente</title>
+    <link rel="stylesheet" href="../css/suporte.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Suporte ao Cliente</h1>
+        <p>Por favor, preencha o formulário abaixo e nossa equipe de suporte entrará em contato com você em breve.</p>
+        
+        <form action="salvar_suporte.php" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Seu e-mail">
+            </div>
+            
+            <div class="form-group">
+                <label for="observacao">Observação:</label>
+                <textarea id="observacao" name="observacao" required placeholder="Descreva seu problema ou dúvida"></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar</button>
+            
+    
+
+        </form>
+    </div>
+</body>
+</html>

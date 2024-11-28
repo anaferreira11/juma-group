@@ -18,16 +18,9 @@ $con->close();
 </head>
 
 <body>
-<<<<<<< HEAD
 <div class= "container">
     <h1>Produto Alterado com Sucesso!</h1> 
     <a href="listagem.php">OK</a>
-=======
-    <div class="container">
-        <h1>Produto Alterado!</h1>
-        <a href="listagem.php">OK</a>
-
->>>>>>> b8f1ac3f55025172aae5eff929aa50a1515912ff
     </div>
 </body>
 </html>

@@ -6,8 +6,6 @@
     <link rel="stylesheet" href="../../css/listagem.css"> 
 </head>  
 <body>
-
-<<<<<<< HEAD
     <div class="container">
 <h1 class="options-header">Listagem de Produtos</h1>
  
@@ -15,12 +13,6 @@
     <button type="submit"><a href="../../html/Inserir_produto.php">Inserir um novo produto</a></button>
 
 
-=======
-
-    <div class="container">
-        <h1 class="options-header">Listagem de Produtos</h1>    
-
->>>>>>> b8f1ac3f55025172aae5eff929aa50a1515912ff
 
         <table>
             <thead>

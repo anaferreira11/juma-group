@@ -13,15 +13,17 @@
             <div class="menu-icon" onclick="toggleSidebar()">☰</div>
             <div class="nav-links">
 
-                <a href="../src/html/produtos.html">Produtos</a>
+                <a href="../src/php/listagemdeprod.php">Produtos</a>
                 <a href="../src/html/cadastro.html">Cadastro</a>
                 <a href="../src/html/login.html">Login</a>
+
             </div>
             <div class="search-container">
                 <label for="search-bar">PROCURAR PRODUTOS:</label>
                 <input type="text" id="search-bar" placeholder="Digite para pesquisar...">
             </div>
             <a href="../src/html/carrinho.html">🛒</a>
+            <a href="../src/html/previa.html">🎧</a>
         </div>
     </header>
     
