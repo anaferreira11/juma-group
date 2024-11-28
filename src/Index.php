@@ -15,6 +15,13 @@
 
                 <a href="../src/php/listagemdeprod.php">Produtos</a>
                 <a href="../src/html/cadastro.html">Cadastro</a>
+<<<<<<< HEAD
+=======
+
+                <a href="../src/html/login.html">Login</a>
+
+
+>>>>>>> c09b91280c8064f332cc6a400239a8ecba93aa19
                 <a href="../src/html/login.php">Login</a>
 
             </div>
