@@ -7,7 +7,7 @@
     <title>Auralux | Produtos de Skincare</title>  
     <link rel="stylesheet" href="../css/produto.css">
     <style>
-        /* Estilos adicionais podem ser adicionados aqui */
+        
     </style>
 </head>
 <body>
@@ -27,18 +27,17 @@
         <h2>Nossos Produtos</h2>
         <div class="products">
             <?php
-            // Conexão com o banco de dados
+          
             $con = new mysqli("localhost", "root", "", "auralux");
 
-            // Verificação de erro na conexão
+            
             if ($con->connect_error) {
                 die("Falha na conexão: " . $con->connect_error);
             }
 
-            // Consultar os produtos
             $res = $con->query("SELECT * FROM produtos ORDER BY nome");
 
-            // Loop para exibir os produtos
+           
             while ($linha = $res->fetch_object()) {
                 echo "<div class='product'>";
                 echo "<img src='https://m.media-amazon.com/images/I/41LtiyDcE9L.__AC_SY445_SX342_QL70_ML2_.jpg' />";
@@ -51,10 +50,9 @@
                 echo "</div>";
             }
 
-            // Fechar a conexão com o banco
+           
             $con->close();
             ?>
-        </div> <!-- Fecha a div "products" -->
-    </section>
+        </div> 
 </body>
 </html>
