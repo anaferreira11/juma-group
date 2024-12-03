@@ -43,6 +43,9 @@
                 echo "<img src='https://m.media-amazon.com/images/I/41LtiyDcE9L.__AC_SY445_SX342_QL70_ML2_.jpg' />";
                 echo "<h3>" . $linha->nome . "</h3>";
                 echo "<p>Preço: R$ " . number_format($linha->preco, 2, ',', '.') . "</p>";
+                echo "<a href='../php/produto/produto_descricao.php?id=$linha->id'>";
+                echo "<button type='button'>Mais detalhes</button>";
+                echo "</a>";
                 echo "<input type='number' value='1' min='1' aria-label='Quantidade'>";
                 echo "<a href='../html/carrinho.html'>";
                 echo "<button type='button'>COMPRAR</button>";

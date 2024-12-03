@@ -20,6 +20,7 @@
                     <th>Nome</th>
                     <th>Preço</th>
                     <th>Categoria</th>
+                    <th>Descrição</th>
                     <th>Opções</th>
                 </tr>
             </thead>
@@ -38,6 +39,7 @@
                          echo "<a href='../categorias_produto/editar_categoria.php?id=$linha->categoria'>";
                          echo"$linha->nome_categoria";
                          echo "</a>";
+                         echo "<td>". $linha->descricao. "</td>";
                          echo "<td>";
                          echo "<a href='editar.php?id=$linha->id'> editar </a>";
                          echo "<a href='excluir.php?id=$linha->id'> excluir </a>";

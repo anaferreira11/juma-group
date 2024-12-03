@@ -3,11 +3,13 @@
 <?php
 $id =$_GET["id"];
 $con = new mysqli ("localhost","root", "", "auralux");
-$res = $con-> query("Select * from produtos");
+$res = $con-> query("Select * from produtos where id = '$id'");
 if($obj= $res->fetch_object()){
+    $id = $obj->id;
     $nome=$obj->nome;
     $preco=$obj->preco;
     $categoria=$obj->categoria;
+    $descricao=$obj->descricao;
 
 
 }
@@ -52,7 +54,9 @@ $con -> close();
                         }
                     }
                     ?>
-                </select>    
+                </select> 
+                <label for="descricao">Editar Descrição do Produto </label>
+                <input type="text" id="descricao" name="descricao" value="<?=$descricao?>" required>   
             </div>
             <div class="form-group">
 

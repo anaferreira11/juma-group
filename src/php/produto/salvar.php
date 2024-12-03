@@ -2,10 +2,11 @@
  $nome = $_POST["nome"];
  $preco = $_POST["preco"];
  $categoria = $_POST["categoria"];
+ $descricao = $_POST["descricao"];
 
 $con = new mysqli ("localhost","root","", "auralux");
  
-$con->query("insert into produtos(nome,preco,categoria) values ('$nome','$preco','$categoria')");
+$con->query("insert into produtos(nome,preco,descricao,categoria) values ('$nome','$preco','$descricao','$categoria')");
 
 $con ->close();
 ?>

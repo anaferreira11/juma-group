@@ -48,6 +48,11 @@
                 ?>
 
                 </select>
+            </div><br>
+
+            <div class="form-group">
+                <label for="descricao">Descrição</label>
+                <input type="text" id="descricao" name="descricao" required>
             </div>
 
             <div class="form-group">
