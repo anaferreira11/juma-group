@@ -30,11 +30,6 @@
           
             $con = new mysqli("localhost", "root", "", "auralux");
 
-            
-            if ($con->connect_error) {
-                die("Falha na conexão: " . $con->connect_error);
-            }
-
             $res = $con->query("SELECT * FROM produtos ORDER BY nome");
 
            

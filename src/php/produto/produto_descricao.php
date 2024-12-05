@@ -10,7 +10,7 @@
        $descricao=$obj->descricao;
    
    }
-   $con -> close(); 
+   $con ->close(); 
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
